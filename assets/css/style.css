@@ -197,6 +197,9 @@ textarea:focus {
 .container {
   max-width: 1224px;
 }
+.container-xl {
+  max-width: 1400px;
+}
 /*========== CONTAINER WIDTH// ==========*/
 
 /*========== GLOBAL CSS ==========*/
@@ -628,7 +631,7 @@ textarea:focus {
 
 /*========== FEED AREA ==========*/
 .feed-slider .card {
-	padding-bottom: 130%;
+	padding-top: 130%;
 }
 .feed-slider {
 	margin-right: -5%;
