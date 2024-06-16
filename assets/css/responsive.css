@@ -1,0 +1,117 @@
+/*==========> XS + SM : < 768px (MOBILE) ==========*/
+@media (max-width: 767.98px) {
+  /* GLOBAL */
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  .fs-3 {
+    font-size: 20px !important;
+  }
+  .section-padding-y {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+  }
+  /* GLOBAL// */
+
+
+  /* HERO AREA */
+  .card-featured {
+    min-height: 33em;
+  }
+  /* HERO AREA// */
+
+  /* GALLERY AREA */
+  .gallery .col:nth-child(4n) > .card,
+  .gallery .col:nth-child(4n + 1) > .card,
+  .gallery .card {
+    min-height: 17em;
+  }
+  .gallery .col:nth-child(4n) > .card {
+    margin-top: 0;
+  }
+  /* GALLERY AREA// */
+
+  /* FEED AREA */
+  .feed-slider {
+    margin-right: -50%;
+  }
+  /* FEED AREA// */
+}
+
+/*==========> XS + SM + MD : < 991px ==========*/
+@media (max-width: 991.98px) {
+}
+
+/*========== MD + LG : 768px TO < 1200px (MIDDLE) ==========*/
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  .card-featured {
+    min-height: 29em;
+  }
+  
+}
+
+/*==========> MD : 768px TO < 991px ==========*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 720px;
+  }
+  /* GLOBAL// */
+}
+
+/*==========> LG : 992px TO < 1200px. ==========*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 945px;
+  }
+  /* GLOBAL// */
+}
+
+/*==========> XL : 1200px TO < 1400px ==========*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*==========> SM : 576px TO < 768px ==========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 375px;
+  }
+  /* GLOBAL// */
+}
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
