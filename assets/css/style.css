@@ -206,34 +206,6 @@ textarea:focus {
   background-repeat: no-repeat;
   background-color: var(--bs-gray-300);
 }
-.el-absolute {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  max-height: 100%;
-}
-.el-absolute.center-center,
-.el-absolute.center-right,
-.el-absolute.center-left {
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.el-absolute.center-center {
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.el-absolute.top-right,
-.el-absolute.bottom-right,
-.el-absolute.center-right {
-  left: auto;
-  right: 0;
-}
-.el-absolute.bottom-right,
-.el-absolute.bottom-left {
-  top: auto;
-  bottom: 0;
-}
 .overlay::before {
   content: "";
   position: absolute;
@@ -261,44 +233,6 @@ textarea:focus {
 .slick-slide {
   margin-right: calc(var(--bs-gutter-x) * 0.5);
   margin-left: calc(var(--bs-gutter-x) * 0.5);
-}
-.pulse-btn {
-  position: relative;
-  z-index: 1;
-}
-.pulse-btn:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  border-radius: inherit;
-  background-color: var(--bs-body-color);
-  opacity: 0.6;
-  z-index: -1;
-  -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
-    infinite;
-  animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
-  pointer-events: none;
-}
-@keyframes btnIconRipple {
-  0% {
-    border-width: 4px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  80% {
-    border-width: 1px;
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
 .btn {
@@ -479,12 +413,17 @@ textarea:focus {
   transition: 0.3s ease;
   padding: 0.5em 0;
 }
-/* .header-wrapper.sticky {
-  position: fixed;
-  padding: 0.25em 0;
-  background: #fff;
-  animation: slideInDown 0.5s ease;
-} */
+.header-wrapper.sticky {
+	position: fixed;
+	padding: 0.5em 0 !important;
+	background: #fff;
+	animation: slideInDown 0.5s ease;
+	box-shadow: var(--bs-box-shadow-sm);
+}
+@keyframes slideInDown {
+  0%{transform: translateY(-100%);}
+  100%{transform: translateY(0%);}
+}
 .header-wrapper .form-control {
 	width: 25em;
 }
